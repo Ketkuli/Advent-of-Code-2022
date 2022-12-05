@@ -39,25 +39,25 @@ def first():
 
 # Advent of code 2.12.2022 second puzzle
 
-#A = Rock = 1 point
-#B = Paper = 2 points
-#C = Scissors = 3 points
+# A = Rock = 1 point
+# B = Paper = 2 points
+# C = Scissors = 3 points
 
-#X = Lose
-#Y = Draw
-#Z = Win
+# X = Lose
+# Y = Draw
+# Z = Win
 
 def second():
     sum_of_points = 0
 
-    outcome_points = {"X":0, "Y":3, "Z":6} # These are the points for victory, draw or win
+    outcome_points = {"X":0, "Y":3, "Z":6} # These are the points for lose, draw or win
 
     shape_points = {"A":1, "B":2, "C":3}
 
     choices = {
-    "X": {"A": "C", "B": "A", "C": "B"}, #Lose
-    "Y": {"A": "A", "B": "B", "C": "C"}, #Draw
-    "Z": {"A": "B", "B": "C", "C": "A"}  #Victory
+    "X": {"A": "C", "B": "A", "C": "B"}, # Lose
+    "Y": {"A": "A", "B": "B", "C": "C"}, # Draw
+    "Z": {"A": "B", "B": "C", "C": "A"}  # Win
     }
 
     with open("AoC2022_0212.txt") as file:
